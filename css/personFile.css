@@ -158,14 +158,14 @@ width:300px;
 margin:0 auto;
 }
 .progress{
-width:6rem;
-height:2.56rem;
-background: url(../img/progress.png) repeat-y 0 0;
+width:180px;
+height:120px;
+background: url(../img/progress.png) no-repeat 0 0;
 background-size: 100%;
 position: absolute;
 top:10%;
 left:50%;
-margin-left: -3rem;
+margin-left: -90px;
 text-align: center
 }
 .progress p{

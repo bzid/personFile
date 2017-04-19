@@ -131,11 +131,14 @@ var y = 0;
 var timer = setInterval(function(){
     i++;
     y++;
+    var str = (y/180*100).toFixed(0)+'%';
+    $('#num').html(str);
     gd.clearRect(0,0,oC.width,oC.height);
     drawArc2(100,360,'#eee');
     drawArc(100,i,lg);
-    // gd.font = '30px 微软雅黑';
     // var str = (y/180*100).toFixed(0)+'%';
+    // $('#num').html(str);
+    // gd.font = '1.024rem 微软雅黑';
     // gd.textAlign = 'center';
     // gd.textBaseline = 'bottom';
     gd.fillStyle = lg;
@@ -161,5 +164,6 @@ function drawArc2(r,d,color){
     gd.lineWidth = 10;
     gd.stroke();
 }
+
 
         
