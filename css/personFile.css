@@ -1,0 +1,202 @@
+html,body{
+height:100%;
+background: #ebebeb;
+}
+html{
+font-size: 20px
+}
+.L{
+float: left;
+}
+.R{
+float: right
+}
+img{
+width:100%;
+height:100%;
+display: block
+}
+.container{
+width:16rem;
+font-family: '微软雅黑';
+margin:0 auto;
+overflow: hidden;
+}
+.container header{
+width:16rem;
+height:2.727rem;
+background: #fff;
+padding-top: .6372rem
+}
+.container header .personInfo{
+height:2.0956rem;
+padding-left: .426rem;
+}
+.container header .personInfo a{
+width:2.0956rem;
+height:2.0956rem;
+display: block
+}
+.container header .personInfo .baseInfo{
+margin-left: .469rem;
+}
+.container header .personInfo p.personName{
+margin-top: .15rem
+}
+.container header .personInfo p.personName span{
+font-size: .68266rem;
+color:#000;
+}
+.container header .personInfo p.personName strong,.personInfo .personNum{
+font-size: .4693rem;
+color:#666;
+}
+.container header .personInfo .personName strong{
+padding-left: .5973rem;
+background: url(../img/man@2x.png) no-repeat 0 center;
+background-size: .384rem;
+margin-left: .384rem;
+}
+.container header .personInfo .personNum{
+margin-top:.2986rem 
+}
+.container header .upload{
+margin-right: 1.152rem;
+width:2.304rem;
+height:2.0956rem;
+text-align: center;
+}
+.container header .upload img{
+width:1.322rem;
+height:1.322rem;
+display: block;
+margin:0 auto;
+}
+.container header .upload span{
+font-size: .384rem;
+margin-top: .284rem;
+display: block;
+color:#666;
+}
+.content{
+margin-top: .426rem
+}
+.swiper-container{
+width:100%;
+height:5.122rem;
+}
+.dataImgBox{
+background: #fff;
+padding-bottom: .5973rem
+}
+.content .dataImgBox{
+padding-left: .426rem
+}
+.dataImgBox h2{
+font-size: .6826rem;
+color:#000;
+height:1.622rem;
+line-height: 1.622rem;
+font-weight: normal
+}
+.dataImgBox .dataImg{
+text-align: center;
+font-size: .4695rem;
+color:#333;
+}
+.useMedical{
+margin-top: .426rem ;
+width:100%;
+height:6.0158rem;
+background: #fff;
+padding-top: .4268rem
+}
+.useMedical ul li{
+width:49.8%;
+height:5.589rem;
+border-right:1px solid #ccc
+}
+.useMedical ul li.noBor{
+border:none;
+}
+.useMedical ul li img{
+display: block;
+width:1.5366rem;
+height:1.5366rem;
+margin:0 auto;
+margin-top: 1.408rem;
+}
+.useMedical ul li p{
+text-align: center;
+margin-top: .896rem;
+font-size: .629rem;
+color:#333;
+}
+.Record{
+margin-top: .426rem ;
+width:100%;
+background: #fff;
+}
+.Record h3{
+text-align: center;
+font-size: .629rem;
+color:#000;
+font-weight: normal;
+height:2.134rem;
+line-height: 2.134rem
+}
+canvas{
+background:#fff;
+margin:0 auto;
+}
+.progressBox{
+position: relative;
+width:300px;
+margin:0 auto;
+}
+.progress{
+width:6rem;
+height:2.56rem;
+background: url(../img/progress.png) repeat-y 0 0;
+background-size: 100%;
+position: absolute;
+top:10%;
+left:50%;
+margin-left: -3rem;
+text-align: center
+}
+.progress p{
+font-size: .4695rem;
+color:#000;
+}
+.progress p.num{
+font-size: 1.0244rem;
+color:#81e9e6;
+margin-top: .98rem
+}
+.progress p.text{
+margin-top: .384rem
+}
+.accessment{
+width:12rem;
+margin:0 auto;
+background: #fff;
+margin-top: -3.5rem;
+position: relative;
+padding-bottom: 1.322rem
+}
+.accessment span{
+font-size: .5975rem;
+color:#000;
+}
+.accessment ul{
+margin-left: .5122rem
+}
+.accessment ul li{
+width:.6829rem;
+height:.6829rem;
+margin-right: .5122rem
+}
+.accessment ul li img{
+
+}
