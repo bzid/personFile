@@ -2,6 +2,9 @@ html,body{
 height:100%;
 background: #ebebeb
 }
+*{
+-webkit-tap-highlight-color: transparent;
+}
 html{
 font-size: 20px
 }
@@ -121,27 +124,131 @@ padding-left: .469rem
 }
 .content .diet .dietAssessment{
 background: #fff;
+padding-top: .384rem;
 }
 .content .diet .dietAssessment h4{
 font-size: .5546rem;
 color:#000;
 font-weight: normal;
-height:1.1524rem;
-line-height: 1.1524rem;
-padding-left: .469rem
 }
-.content .diet .dietAssessment ul{
+.content .diet .dietAssessment .dietType{
 width:15.06rem;
 margin:0 auto;
+position: relative;
+padding-bottom: .853rem
+}
+.content .diet .dietAssessment .dietType em{
+width:1px;
+height:5.589rem;
+position: absolute;
+top:.2rem;
+left:50%;
+margin-left: -.5px;
+background: #eee
 }
 .content .diet .dietAssessment ul li{
 font-size: .5546rem;
 color:#000;
 width:50%;
+margin-top: .64rem
+}
+.content .diet .dietAssessment ul li.toR span{
+margin-left: 2.432rem
 }
 .content .diet .dietAssessment ul li span{
 margin-left: 1.28rem
 }
 .content .diet .dietAssessment ul li img{
-margin-left: 1.7rem
+margin-left: 1.7rem;
+width:.853rem;
+height:.853rem;
+}
+.content .sport h3{
+font-size: .5975rem;
+color:#353535;
+font-weight: normal;
+background: #ebebeb;
+height:1.1524rem;
+line-height: 1.1524rem;
+padding-left: .469rem
+}
+.content .sport .sportTime{
+width:100%;
+height:5.546rem;
+background: #1cd8d2;
+color:#fff;
+}
+.content .sport .sportTime .time{
+width:13.354rem;
+margin:0 auto;
+}
+.content .sport .sportTime .p_type,.p_distence{
+padding-top: 2.346rem
+}
+.content .sport .sportTime .time p.p_type{
+font-size: .725rem;
+width:4.266rem;
+}
+.content .sport .sportTime .p_time{
+width:5.077rem;
+padding-top: 1.4rem
+}
+.content .sport .sportTime .p_time span{
+font-size: .469rem
+}
+.content .sport .sportTime .p_time em{
+font-size: 1.7rem;
+margin-left: .2rem;
+margin-right: .2rem
+}
+.content .sport .sportTime .p_distence{
+width:4rem;
+text-align: right;
+}
+.content .sport .sportTime .p_distence i{
+font-size: .853rem;
+}
+.content .sport .sportTime .p_distence span{
+font-size: .469rem
+}
+.content .sport .sportText{
+text-align: center;
+font-size: .5546rem;
+color:#fff;
+margin-top: .253rem
+}
+.assessment{
+background: #fff;
+margin-top: .426rem;
+padding-top: .98rem;
+padding-bottom: 1.23rem
+}
+.assessment p{
+font-size: .5973rem;
+color:#000;
+text-align: center
+}
+.assessment .status{
+width:9.94rem;
+margin:0 auto;
+margin-top: 1.152rem
+}
+.assessment .status span{
+line-height: 1.024rem;
+font-size: .5546rem;
+color:#000;
+}
+.assessment .status ul{
+margin-left: .2rem
+}
+.assessment .status ul li{
+margin-left: 1.024rem
+}
+.assessment .status ul li.status01{
+margin-left: 0
+}
+.assessment .status ul li img{
+width:1.024rem;
+height:1.024rem;
+display: block
 }

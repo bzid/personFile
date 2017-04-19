@@ -1,0 +1,53 @@
+html,body{
+height:100%;
+}
+*{
+-webkit-tap-highlight-color: transparent;
+}
+html{
+font-size: 20px
+}
+.L{
+float: left;
+}
+.R{
+float: right
+}
+.container{
+width:16rem;
+font-family: '微软雅黑';
+margin:0 auto;
+overflow: hidden;
+}
+.container .remindBox .remind{
+width:100%;
+height:4.224rem;
+border-bottom: 1px solid #ebebeb;
+position: relative;
+}
+.container .remindBox .remind .remindType{
+width:11.09rem;
+margin:0 auto;
+font-size: .853rem;
+color:#000;
+line-height: 4.224rem;
+}
+.container .remindBox .remind .remindType a{
+display: block
+}
+.container .remindBox .remind .remindType img{
+width:3.4rem;
+height:1.322rem;
+display: block;
+margin-top: 1.451rem
+}
+.container .remindBox .remind .remindTime{
+font-size: .597rem;
+position: absolute;
+bottom:.128rem;
+left:50%;
+transform: translate(-50%,0)
+}
+.container .remindBox .remind .remindTime a{
+color:#576b95;
+}
