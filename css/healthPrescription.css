@@ -1,0 +1,78 @@
+html,body{
+height:100%;
+}
+html{
+font-size: 20px
+}
+.L{
+float: left;
+}
+.R{
+float: right
+}
+.container{
+width:16rem;
+font-family: '微软雅黑';
+margin:0 auto;
+overflow: hidden;
+}
+.container ul li{
+width:100%;
+height:6.4rem;
+text-align: center;
+font-size: .7683rem;
+color:#333;
+}
+.container ul li.healthList1 img{
+width:1.9635rem;
+height:1.9635rem;
+display: block;
+margin:0 auto;
+margin-top: 1.4rem
+}
+.container ul li.healthList1 div{
+width:50%;
+height:100%;
+}
+.container ul li.healthList1 div p{
+margin-top: .768rem
+}
+.container ul li.healthList2 div p{
+margin-top: .68266rem
+}
+.container ul li.healthList3 div p{
+margin-top: .8536rem
+}
+.container ul li.healthList4 div p{
+margin-top: .811rem
+}
+.container ul li.healthList1 div.habit{
+background: #fef2f2
+}
+.container ul li.healthList1 div.walk{
+background: #f3fee8
+}
+.container ul li.healthList1 div.yao{
+background: #f2fefa
+}
+.container ul li.healthList1 div.check{
+background: #fffaf0
+}
+.container ul li.healthList2 div{
+width:100%;
+height:4.83rem;
+background: #fffefe;
+padding-top: 1.57rem
+}
+.container ul li.healthList4 div{
+width:100%;
+height:4.83rem;
+background: #fffefe;
+padding-top: 1.66rem
+}
+.container ul li.healthList2 div img{
+width:2.39rem;
+height:2.39rem;
+display: block;
+margin:0 auto;
+}

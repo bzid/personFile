@@ -1,0 +1,147 @@
+html,body{
+height:100%;
+background: #ebebeb
+}
+html{
+font-size: 20px
+}
+.L{
+float: left;
+}
+.R{
+float: right
+}
+.container{
+width:16rem;
+font-family: '微软雅黑';
+margin:0 auto;
+overflow: hidden;
+}
+.container header{
+width:100%;
+/*height:10.24rem;*/
+background: #fff;
+}
+.container header .headerBox h2{
+font-size: .5975rem;
+color:#353535;
+font-weight: normal;
+background: #ebebeb;
+height:1.1524rem;
+line-height: 1.1524rem;
+padding-left: .469rem
+}
+.container header .headerBox ul{
+width:15.06rem;
+margin:0 auto;
+}
+.container header .headerBox ul li{
+height:2.6rem;
+width:100%;
+border-bottom:1px solid #eee;
+line-height: 2.6rem
+}
+.container header .headerBox ul li img.medical{
+width:2.518rem;
+height:1.92rem;
+border:1px solid #eee;
+border-radius:.1rem ;
+margin-top: .34rem
+}
+.container header .headerBox ul li span{
+font-size: .597rem;
+color:#000;
+margin-left: .5122rem
+}
+.container header .headerBox ul li img.delete{
+width:.896rem;
+height:.896rem;
+display: block;
+margin-top: .852rem;
+margin-right: .426rem
+}
+.container header .headerBox .pointMedical{
+height:1.152rem;
+line-height: 1.152rem;
+font-size: .469rem;
+text-align: center
+}
+.container header .headerBox .pointMedical a{
+color: #576b95;
+text-decoration: underline;
+}
+.content{
+width:100%;
+margin-top: .426rem;
+}
+.content .contentChart{
+background: #fff;
+}
+.content .contentChart ul{
+width:15.06rem;
+margin:0 auto;
+border-bottom: 1px solid #eee
+}
+.content .contentChart ul li{
+height:1.3653rem;
+line-height: 1.3653rem;
+font-size: .597rem;
+color:#000;
+}
+.content .contentChart ul li span{
+width:5.717rem;
+text-align: right
+}
+.content .contentChart ul li p{
+height:1.3653rem;
+}
+.content .contentChart .pointChart{
+height:1.152rem;
+line-height: 1.152rem;
+font-size: .469rem;
+text-align: center
+}
+.content .contentChart .pointChart a{
+color: #576b95;
+text-decoration: underline;
+}
+/*.content .contentChart ul li p input{
+height:100%;
+margin-top: -.5rem;
+border-bottom: 1px solid #000
+}*/
+.content .diet h3{
+font-size: .5975rem;
+color:#353535;
+font-weight: normal;
+background: #ebebeb;
+height:1.1524rem;
+line-height: 1.1524rem;
+padding-left: .469rem
+}
+.content .diet .dietAssessment{
+background: #fff;
+}
+.content .diet .dietAssessment h4{
+font-size: .5546rem;
+color:#000;
+font-weight: normal;
+height:1.1524rem;
+line-height: 1.1524rem;
+padding-left: .469rem
+}
+.content .diet .dietAssessment ul{
+width:15.06rem;
+margin:0 auto;
+}
+.content .diet .dietAssessment ul li{
+font-size: .5546rem;
+color:#000;
+width:50%;
+}
+.content .diet .dietAssessment ul li span{
+margin-left: 1.28rem
+}
+.content .diet .dietAssessment ul li img{
+margin-left: 1.7rem
+}
