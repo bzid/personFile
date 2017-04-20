@@ -2,6 +2,9 @@ Highcharts.setOptions({
     colors: [ '#73d7f6','#94c62a']
 });
 var chart = new Highcharts.Chart('main', {
+    chart:{
+        marginRight: 40
+    },
     title: {
         text: null,
         x: -20
@@ -14,7 +17,7 @@ var chart = new Highcharts.Chart('main', {
             enabled:false // 禁用版权信息
     },
     xAxis: {
-        categories: ['01-19', '01-20', '01-21', '01-22', '01-23']
+        categories: ['01-19', '01-20', '01-21', '01-22', '01-23'],
     },
     yAxis: {
         title: {
@@ -31,6 +34,7 @@ var chart = new Highcharts.Chart('main', {
     },
     plotOptions: {
         series: {
+            allowPointSelect: true,
             marker: {
                 fillColor: '#FFFFFF',
                 lineWidth: 2,
@@ -55,6 +59,9 @@ var chart = new Highcharts.Chart('main', {
 });
 
 var chart = new Highcharts.Chart('main2', {
+    chart:{
+        marginRight: 40
+    },
     title: {
         text: null,
         x: -20
@@ -120,7 +127,7 @@ var cx = oC.width/2,
     cy = oC.height/2;
     
 
-var lg = gd.createLinearGradient(0,0,200,0);//穿件一个线性渐变
+var lg = gd.createLinearGradient(0,0,200,0);//创建一个线性渐变
 lg.addColorStop(0,'#1dd8d1');
 lg.addColorStop(0.5,'#40decf');
 lg.addColorStop(1,'#91ecc7');
