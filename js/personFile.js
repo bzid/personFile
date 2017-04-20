@@ -47,10 +47,10 @@ var chart = new Highcharts.Chart('main', {
     },
     series: [{
         name: '血压',
-        data: [30,40,100,80,50]
+        data: [110,136,120,158,130]
     }, {
         name: '血压',
-        data: [10,30,110,70,30]
+        data: [78,59,100,70,90]
     }]
 });
 
@@ -100,10 +100,10 @@ var chart = new Highcharts.Chart('main2', {
     },
     series: [{
         name: '血压',
-        data: [30,40,100,80,50]
+        data: [110,136,120,158,130]
     }, {
         name: '血压',
-        data: [10,30,110,70,30]
+        data: [78,59,100,70,90]
     }]
 });
 
