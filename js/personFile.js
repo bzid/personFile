@@ -120,10 +120,10 @@ var cx = oC.width/2,
     cy = oC.height/2;
     
 
-var lg = gd.createLinearGradient(300,200,600,400);
-lg.addColorStop(0,'#1dd9d2');
-lg.addColorStop(0.5,'#6fe7ca');
-lg.addColorStop(1,'#8fedc7');
+var lg = gd.createLinearGradient(0,0,200,0);//穿件一个线性渐变
+lg.addColorStop(0,'#1dd8d1');
+lg.addColorStop(0.5,'#40decf');
+lg.addColorStop(1,'#91ecc7');
     
 
 var i = 180;
