@@ -121,7 +121,7 @@ var cx = oC.width/2,
     
 
 var lg = gd.createLinearGradient(300,200,600,400);
-lg.addColorStop(0,'#1dd8d2');
+lg.addColorStop(0,'#1dd9d2');
 lg.addColorStop(0.5,'#6fe7ca');
 lg.addColorStop(1,'#8fedc7');
     
@@ -131,8 +131,6 @@ var y = 0;
 var timer = setInterval(function(){
     i++;
     y++;
-    var str = (y/180*100).toFixed(0)+'%';
-    $('#num').html(str);
     gd.clearRect(0,0,oC.width,oC.height);
     drawArc2(100,360,'#eee');
     drawArc(100,i,lg);
@@ -141,8 +139,10 @@ var timer = setInterval(function(){
     // gd.font = '1.024rem 微软雅黑';
     // gd.textAlign = 'center';
     // gd.textBaseline = 'bottom';
+    var str = (y/180*100).toFixed(0)+'%';
+    $('#num').html(str);
     gd.fillStyle = lg;
-    // gd.fillText(str,cx,cy);
+    gd.fillText(str,cx,cy);
     if(i==360){
         clearInterval(timer);
     }
