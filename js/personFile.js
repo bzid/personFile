@@ -142,7 +142,7 @@ var timer = setInterval(function(){
     var str = (y/180*100).toFixed(0)+'%';
     $('#num').html(str);
     gd.fillStyle = lg;
-    gd.fillText(str,cx,cy);
+    // gd.fillText(str,cx,cy);
     if(i==360){
         clearInterval(timer);
     }
