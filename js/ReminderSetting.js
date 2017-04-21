@@ -26,11 +26,20 @@ picker('#picker3');
 
 $.each($('.remindImg'),function(i,item){
     $(this).on('tap',function(){
+      var remindTime = $(this).parent().parent().next();
         var oRemindImg = $(this).attr('src');
         if(oRemindImg == 'img/on@2x.png'){
-            $(this).attr('src','img/off@2x.png')
+            $(this).attr('src','img/off@2x.png');
+            if(remindTime.attr('class') && remindTime.attr('class').indexOf('hide') == -1){
+                remindTime.addClass('hide');
+                remindTime.removeClass('show');
+            }
         }else{
-          $(this).attr('src','img/on@2x.png')
+          $(this).attr('src','img/on@2x.png');
+          if(remindTime.attr('class') && remindTime.attr('class').indexOf('show') == -1){
+                remindTime.addClass('show');
+                remindTime.removeClass('hide');
+            }
         }
     })
 });

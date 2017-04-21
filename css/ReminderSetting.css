@@ -49,7 +49,8 @@ left:50%;
 transform: translate(-50%,0);
 color:#576b95;
 height:.896rem;
-line-height: .896rem
+line-height: .896rem;
+display: none
 }
 .container .remindBox .remind .remindTime input{
 color:#576b95;
@@ -61,4 +62,10 @@ margin-left: .1rem
 }
 .container .remindBox .remind .remindTime a{
 color:#576b95;
+}
+.container .remindBox .remind .show{
+display: block;
+}
+.container .remindBox .remind .hide{
+display: none
 }

@@ -173,18 +173,18 @@ canvas();
 
 
 
-var oStar = document.querySelector('#star');     
-var oStarImg = document.querySelectorAll('#star .starImg');  
-for (var z = 0; z < oStarImg.length; z++) {
-    (function(index){
-           oStarImg[z].onclick = function(){
-                for (var y = 0; y < oStarImg.length; y++) {
-                    if(y <= index){
-                        oStarImg[y].setAttribute('src','img/star@2x.png');
-                    }else{
-                        oStarImg[y].setAttribute('src','img/star_no@2x.png');
-                    }
-                }
-           }
-    })(z);
-}   
+// var oStar = document.querySelector('#star');     
+// var oStarImg = document.querySelectorAll('#star .starImg');  
+// for (var z = 0; z < oStarImg.length; z++) {
+//     (function(index){
+//            oStarImg[z].onclick = function(){
+//                 for (var y = 0; y < oStarImg.length; y++) {
+//                     if(y <= index){
+//                         oStarImg[y].setAttribute('src','img/star@2x.png');
+//                     }else{
+//                         oStarImg[y].setAttribute('src','img/star_no@2x.png');
+//                     }
+//                 }
+//            }
+//     })(z);
+// }   
