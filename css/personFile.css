@@ -61,11 +61,11 @@ background-size: .384rem;
 margin-left: .384rem;
 }
 .container header .personInfo .personNum{
-margin-top:.2986rem 
+margin-top:.25rem 
 }
 .container header .upload{
 margin-right: 1.152rem;
-width:2.304rem;
+/*width:2.304rem;*/
 height:2.0956rem;
 text-align: center;
 }
