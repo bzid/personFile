@@ -34,7 +34,6 @@ var chart = new Highcharts.Chart('main', {
     },
     plotOptions: {
         series: {
-            allowPointSelect: true,
             marker: {
                 fillColor: '#FFFFFF',
                 lineWidth: 2,
@@ -59,9 +58,6 @@ var chart = new Highcharts.Chart('main', {
 });
 
 var chart = new Highcharts.Chart('main2', {
-    chart:{
-        marginRight: 40
-    },
     title: {
         text: null,
         x: -20
