@@ -44,9 +44,20 @@ margin-top: 1.451rem
 .container .remindBox .remind .remindTime{
 font-size: .597rem;
 position: absolute;
-bottom:.128rem;
+bottom:0rem;
 left:50%;
-transform: translate(-50%,0)
+transform: translate(-50%,0);
+color:#576b95;
+height:.896rem;
+line-height: .896rem
+}
+.container .remindBox .remind .remindTime input{
+color:#576b95;
+width:2rem;
+height:100%;
+font-size: .597rem;
+display: block;
+margin-left: .1rem
 }
 .container .remindBox .remind .remindTime a{
 color:#576b95;

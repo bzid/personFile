@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="css/weui.css"/>
     <link rel="stylesheet" type="text/css" href="css/healthRecord.css"/>
     <title>健康记录</title>
     <script>
@@ -17,7 +18,7 @@
         <header>
             <div class="headerBox">
                 <h2>您今天是否服用过以下药物？</h2>
-                <ul>
+                <ul class="medical">
                     <li class="clearfix">
                         <img src="img/yao.jpg" class="medical L">
                         <span class="L">立普妥</span>
@@ -54,12 +55,12 @@
                     <div class="dietType">
                         <h4>今日三餐总体评估：</h4>
                         <ul class="clearfix">
-                            <li class="L"><span class="L">高盐</span><a href="javascript:;" class="L"><img src="img/select_ed@2x.png"></a></li>
-                            <li class="L toR"><span class="L">低盐</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png"></a></li>
-                            <li class="L"><span class="L">油腻</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png"></a></li>
-                            <li class="L toR"><span class="L">清淡</span><a href="javascript:;" class="L"><img src="img/select_ed@2x.png"></a></li>
-                            <li class="L"><span class="L">肉食</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png"></a></li>
-                            <li class="L toR"><span class="L">素食</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png"></a></li>
+                            <li class="L"><span class="L">高盐</span><a href="javascript:;" class="L"><img src="img/select_ed@2x.png" class="dietImg"></a></li>
+                            <li class="L toR"><span class="L">低盐</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png" class="dietImg"></a></li>
+                            <li class="L"><span class="L">油腻</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png" class="dietImg"></a></li>
+                            <li class="L toR"><span class="L">清淡</span><a href="javascript:;" class="L"><img src="img/select_ed@2x.png" class="dietImg"></a></li>
+                            <li class="L"><span class="L">肉食</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png" class="dietImg"></a></li>
+                            <li class="L toR"><span class="L">素食</span><a href="javascript:;" class="L"><img src="img/select_no@2x.png" class="dietImg"></a></li>
                         </ul>
                         <em></em>
                     </div>
@@ -87,14 +88,30 @@
                 <p>呐，做人呢，最重要的就是开心喽！</p>
                 <div class="clearfix status">
                     <span class="L">我今天的心情是：</span>
-                    <ul class="L">
-                        <li class="L status01"><img src="img/happy01@2x.png"></li>
-                        <li class="L"><img src="img/general_no@2x.png"></li>
-                        <li class="L"><img src="img/bad_no@2x.png"></li>
+                    <ul class="L" id="status">
+                        <li class="L status01"><img src="img/happy01@2x.png" class="statusImg"></li>
+                        <li class="L"><img src="img/general_no@2x.png" class="statusImg"></li>
+                        <li class="L"><img src="img/bad_no@2x.png" class="statusImg"></li>
                     </ul>
                 </div>
             </div>
         </div>
+        <div class="weui_dialog_confirm" id="weui_dialog_confirm" style="display: none">
+            <div class="weui_mask"></div>
+            <div class="weui_dialog" id="weui_dialog">
+                <div class="weui_dialog_hd">
+                    <strong class="weui_dialog_title">提示</strong>
+                </div>
+                <div class="weui_dialog_bd" id="dialog_txt">确定要删除吗？</div>
+                <div class="weui_dialog_ft">
+                    <a href="javascript:;" class="weui_btn_dialog primary" id="cans">取消</a>
+                    <a href="javascript:;" class="weui_btn_dialog primary" id="sure2">确定</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="js/zepto.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+    <script src="js/healthRecord.js"></script>
 </body>
 </html>

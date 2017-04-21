@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="css/base.css"/>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/jquery-weui/1.0.1/css/jquery-weui.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/weui.css"/> -->
     <link rel="stylesheet" type="text/css" href="css/ReminderSetting.css"/>
     <title>提醒设置</title>
     <script>
@@ -16,21 +18,26 @@
     <div class="container">
         <div class="remindBox">
             <div class="remind">
-                <p class="remindType"><span class="L">服药提醒</span><a href="javascript:;" class="R"><img src="img/on@2x.png"></a></p>
-                <p class="remindTime"><a href="javascript:;">每天早上8点</a></p>
+                <p class="remindType" id="showPicker"><span class="L">服药提醒</span><a href="javascript:;" class="R"><img src="img/on@2x.png" class="remindImg"></a></p>
+                <div class="remindTime"><p class="L">每天</p><input  class="L" type="text" id="picker" value="8 : 00"></div>
             </div>
             <div class="remind">
-                <p class="remindType"><span class="L">监测提醒</span><a href="javascript:;" class="R"><img src="img/off@2x.png"></a></p>
-                <p class="remindTime"><a href="javascript:;">每天早8点和晚8点</a></p>
+                <p class="remindType"><span class="L">监测提醒</span><a href="javascript:;" class="R"><img src="img/off@2x.png" class="remindImg"></a></p>
+                <div class="remindTime"><p class="L">每天</p><input  class="L" type="text" id="picker2" value="10 : 00"></div>
             </div>
             <div class="remind">
-                <p class="remindType"><span class="L">复购提醒</span><a href="javascript:;" class="R"><img src="img/on@2x.png"></a></p>
+                <p class="remindType"><span class="L">复购提醒</span><a href="javascript:;" class="R"><img src="img/on@2x.png" class="remindImg"></a></p>
             </div>
             <div class="remind">
-                <p class="remindType"><span class="L">运动提醒</span><a href="javascript:;" class="R"><img src="img/on@2x.png"></a></p>
-                <p class="remindTime"><a href="javascript:;">每天下午5点</a></p>
+                <p class="remindType"><span class="L">运动提醒</span><a href="javascript:;" class="R"><img src="img/on@2x.png" class="remindImg"></a></p>
+                <div class="remindTime"><p class="L">每天</p><input  class="L" type="text" id="picker3" value="5 : 00"></div>
             </div>
         </div>
     </div>
+    <script src="js/zepto.js"></script>
+    <script src="https://cdn.bootcss.com/jquery-weui/1.0.1/js/jquery-weui.min.js"></script>
+    <script src="js/ReminderSetting.js"></script>
+    <!-- <script src="https://cdn.bootcss.com/jquery-weui/1.0.1/js/city-picker.min.js"></script> -->
+    <!-- <script src="https://res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script> -->
 </body>
 </html>

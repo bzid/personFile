@@ -110,63 +110,81 @@ var chart = new Highcharts.Chart('main2', {
     }]
 });
 
-$('.dataImg').css('width',$('.dataImg').children('div.chart').offset().width*$('.dataImg').children().length);
+// $('.dataImg').css('width',$('.dataImg').children('div.chart').offset().width*$('.dataImg').children().length);
 
-function d2a(n){
-    return n*Math.PI/180;
-}
-var oC = document.getElementById('c1');
-var gd = oC.getContext('2d');
-var gd = oC.getContext('2d');
+function canvas(){
+    var oC = document.getElementById('c1');
+    var gd = oC.getContext('2d');
+    var gd = oC.getContext('2d');
 
-var cx = oC.width/2,
-    cy = oC.height/2;
-    
-
-var lg = gd.createLinearGradient(0,0,200,0);//创建一个线性渐变
-lg.addColorStop(0,'#1dd8d1');
-lg.addColorStop(0.5,'#40decf');
-lg.addColorStop(1,'#91ecc7');
-    
-
-var i = 180;
-var y = 0;
-var timer = setInterval(function(){
-    i++;
-    y++;
-    gd.clearRect(0,0,oC.width,oC.height);
-    drawArc2(100,360,'#eee');
-    drawArc(100,i,lg);
-    // var str = (y/180*100).toFixed(0)+'%';
-    // $('#num').html(str);
-    // gd.font = '1.024rem 微软雅黑';
-    // gd.textAlign = 'center';
-    // gd.textBaseline = 'bottom';
-    var str = (y/180*100).toFixed(0)+'%';
-    $('#num').html(str);
-    gd.fillStyle = lg;
-    // gd.fillText(str,cx,cy);
-    if(i==360){
-        clearInterval(timer);
-    }
-},16);
-
-
-function drawArc(r,d,color){
-    gd.beginPath();
-    gd.arc(cx,cy,r,d2a(180),d2a(d),false);
-    gd.strokeStyle = color;
-    gd.lineWidth = 10;
-    gd.stroke();
-}
-
-function drawArc2(r,d,color){
-    gd.beginPath();
-    gd.arc(cx,cy,r,d2a(180),d2a(d),false);
-    gd.strokeStyle = color;
-    gd.lineWidth = 10;
-    gd.stroke();
-}
-
-
+    var cx = oC.width/2,
+        cy = oC.height/2;
         
+
+    var lg = gd.createLinearGradient(0,0,200,0);//创建一个线性渐变
+    lg.addColorStop(0,'#1dd8d1');
+    lg.addColorStop(0.5,'#40decf');
+    lg.addColorStop(1,'#91ecc7');
+        
+
+    var i = 180;
+    var y = 0;
+    var timer = setInterval(function(){
+        i++;
+        y++;
+        gd.clearRect(0,0,oC.width,oC.height);
+        drawArc2(100,360,'#eee');
+        drawArc(100,i,lg);
+        // var str = (y/180*100).toFixed(0)+'%';
+        // $('#num').html(str);
+        // gd.font = '1.024rem 微软雅黑';
+        // gd.textAlign = 'center';
+        // gd.textBaseline = 'bottom';
+        var str = (y/180*100).toFixed(0)+'%';
+        $('#num').html(str);
+        gd.fillStyle = lg;
+        // gd.fillText(str,cx,cy);
+        if(i==360){
+            clearInterval(timer);
+        }
+    },16); 
+
+    function d2a(n){
+        return n*Math.PI/180;
+    }
+
+    function drawArc(r,d,color){
+        gd.beginPath();
+        gd.arc(cx,cy,r,d2a(180),d2a(d),false);
+        gd.strokeStyle = color;
+        gd.lineWidth = 10;
+        gd.stroke();
+    }
+
+    function drawArc2(r,d,color){
+        gd.beginPath();
+        gd.arc(cx,cy,r,d2a(180),d2a(d),false);
+        gd.strokeStyle = color;
+        gd.lineWidth = 10;
+        gd.stroke();
+    }
+}
+canvas();
+
+
+
+var oStar = document.querySelector('#star');     
+var oStarImg = document.querySelectorAll('#star .starImg');  
+for (var z = 0; z < oStarImg.length; z++) {
+    (function(index){
+           oStarImg[z].onclick = function(){
+                for (var y = 0; y < oStarImg.length; y++) {
+                    if(y <= index){
+                        oStarImg[y].setAttribute('src','img/star@2x.png');
+                    }else{
+                        oStarImg[y].setAttribute('src','img/star_no@2x.png');
+                    }
+                }
+           }
+    })(z);
+}   
